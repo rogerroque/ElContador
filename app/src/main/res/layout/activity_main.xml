@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAAA18"
+    >
+
+
+        <!---->
+    <!-- Resets  -->
+        <!---->
+    <Button
+        android:id="@+id/reset4"
+        android:text="Reset 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/contador1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset3"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset 3"
+        app:layout_constraintLeft_toRightOf="@id/contador3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset2"
+        app:layout_constraintBottom_toTopOf="@+id/reset4"
+        />
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset 2"
+        app:layout_constraintLeft_toRightOf="@id/contador2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/reset3"
+        app:layout_constraintTop_toBottomOf="@+id/reset1"
+        />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset 1"
+        app:layout_constraintLeft_toRightOf="@+id/contador1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contadorglobal"
+        app:layout_constraintBottom_toTopOf="@+id/reset2"
+
+        />
+
+          <!---->
+    <!--Contadores-->
+          <!---->
+
+    <Button
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintLeft_toRightOf="@id/texto4"
+        app:layout_constraintRight_toLeftOf="@+id/reset4"
+        app:layout_constraintTop_toBottomOf="@id/contador3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintLeft_toRightOf="@id/texto3"
+        app:layout_constraintRight_toLeftOf="@id/reset3"
+        app:layout_constraintBottom_toTopOf="@+id/contador4"
+        app:layout_constraintTop_toBottomOf="@+id/contador2"
+
+        />
+
+    <Button
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintLeft_toRightOf="@id/texto2"
+        app:layout_constraintRight_toLeftOf="@id/reset2"
+        app:layout_constraintTop_toBottomOf="@id/contador1"
+        app:layout_constraintBottom_toTopOf="@id/contador3"
+
+        />
+
+    <Button
+        android:id="@+id/contador1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintLeft_toRightOf="@id/texto1"
+        app:layout_constraintRight_toLeftOf="@+id/reset1"
+        app:layout_constraintTop_toBottomOf="@id/contadorglobal"
+        app:layout_constraintBottom_toTopOf="@id/contador2"
+
+        />
+
+        <!---->
+    <!--Textos-->
+        <!---->
+
+    <TextView
+        android:id="@+id/texto4"
+        android:gravity="center"
+        android:background="@drawable/bordenegro"
+        android:layout_width="200px"
+        android:layout_height="102px"
+        style="@style/shadoweffect"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/texto3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/contador4"
+
+        />
+
+    <TextView
+        android:id="@+id/texto3"
+        android:gravity="center"
+        android:background="@drawable/bordenegro"
+        android:layout_width="200px"
+        android:layout_height="102px"
+        style="@style/shadoweffect"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/texto2"
+        app:layout_constraintBottom_toTopOf="@id/texto4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/contador3"
+
+
+    />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:gravity="center"
+        android:background="@drawable/bordenegro"
+        android:layout_width="200px"
+        android:layout_height="102px"
+        style="@style/shadoweffect"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/texto1"
+        app:layout_constraintBottom_toTopOf="@id/texto3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/contador2"
+
+        />
+
+
+    <TextView
+        android:id="@+id/texto1"
+        style="@style/shadoweffect"
+        android:layout_width="200px"
+        android:layout_height="102px"
+        android:background="@drawable/bordenegro"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/texto2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/contador1"
+        app:layout_constraintTop_toBottomOf="@id/contadorglobal"
+
+        />
+
+    <Button
+        android:id="@+id/resetall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET ALL"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/contadorglobal"
+        app:layout_constraintTop_toBottomOf="@id/elmulticontadorvacano"
+        app:layout_constraintBottom_toTopOf="@id/reset1"
+
+    />
+
+    <TextView
+        android:id="@+id/contadorglobal"
+        android:background="@drawable/bordenegro"
+        android:gravity="center"
+        style="@style/shadoweffect"
+        android:layout_width="200px"
+        android:layout_height="102px"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/resetall"
+        app:layout_constraintTop_toBottomOf="@id/elmulticontadorvacano"
+        app:layout_constraintBottom_toTopOf="@id/contador1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/elmulticontadorvacano"
+        android:background="@drawable/bordenegro"
+        android:layout_width="750px"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="El Multicontador"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resetall"
+        android:textColor="#D902BC"
+        android:textSize="90px"
+        android:textStyle="bold"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
