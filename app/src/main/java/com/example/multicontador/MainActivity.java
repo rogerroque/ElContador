@@ -10,11 +10,7 @@ import com.example.multicontador.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     int contadorGlobal;
-    int contador1;
-
-    int contador2;
-    int contador3;
-    int contador4;
+    int contador1; int contador2; int contador3; int contador4;
 
     ActivityMainBinding binding;
 
